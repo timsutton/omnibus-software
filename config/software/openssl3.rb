@@ -69,7 +69,7 @@ build do
 
   configure_cmd =
     if mac_os_x?
-      "./Configure darwin64-x86_64-cc"
+      "./Configure darwin64-arm64"
     elsif windows?
       platform = windows_arch_i386? ? "mingw" : "mingw64"
       "perl.exe ./Configure #{platform}"
