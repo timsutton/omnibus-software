@@ -99,7 +99,7 @@ build do
     if aix?
       "perl ./Configure aix64-cc"
     elsif mac_os_x?
-      "./Configure darwin64-x86_64-cc"
+      "./Configure darwin64-arm64-cc"
     elsif smartos?
       "/bin/bash ./Configure solaris64-x86_64-gcc -static-libgcc"
     elsif omnios?
